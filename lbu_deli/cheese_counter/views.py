@@ -8,6 +8,7 @@ def cheese_list(request):
 
     context = {
         'cheeses': cheeses,
+        'title': 'Welcome to the Cheese Selection',
     }
 
     return render(request, 'cheese_counter/cheese_list.html', context)
@@ -18,6 +19,8 @@ def vegan(request):
 
     context = {
         'cheeses': vegan_cheeses,
+        'title': 'Welcome to the Vegan Cheese Selection',
+        'vegan_list': True,
     }
 
     return render(request, 'cheese_counter/cheese_list.html', context)

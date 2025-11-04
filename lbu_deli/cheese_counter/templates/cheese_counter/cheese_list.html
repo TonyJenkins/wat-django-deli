@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to the Cheese Counter</title>
+    <title>WAT Deli | {{ title }}</title>
+</head>
 <body>
-    <h1>Welcome to the Cheese Counter</h1>
+    <h1>{{ title }}</h1>
     <p>
         Here are the cheeses we currently have in stock!
     </p>
+    {% if vegan_list %}
+    <p>
+        We have an excellent range of vegan cheese.
+    </p>
+    {% endif %}
+
     <ol>
         {% for cheese in cheeses %}
             <li>
