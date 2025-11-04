@@ -55,7 +55,7 @@ ROOT_URLCONF = 'lbu_deli.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['lbu_deli/templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
