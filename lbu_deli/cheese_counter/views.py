@@ -1,3 +1,13 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Cheese
+
+
+def cheese_detail(request, slug):
+    cheese = Cheese.objects.get(slug=slug)
+
+    context = {
+        'cheese': cheese,
+    }
+
+    return render(request, 'cheese_counter/cheese_detail.html', context)
