@@ -19,6 +19,8 @@ class Cheese(models.Model):
     is_vegan = models.BooleanField(default=False)
     price = models.DecimalField(max_digits=8, decimal_places=2, null=True, blank=True)
 
+    slug = models.SlugField(max_length=200, unique=True)
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
