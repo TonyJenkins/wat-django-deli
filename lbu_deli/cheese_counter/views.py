@@ -12,6 +12,17 @@ def cheese_list(request):
 
     return render(request, 'cheese_counter/cheese_list.html', context)
 
+
+def vegan(request):
+    vegan_cheeses = Cheese.objects.filter(is_vegan=True)
+
+    context = {
+        'cheeses': vegan_cheeses,
+    }
+
+    return render(request, 'cheese_counter/cheese_list.html', context)
+
+
 def cheese_detail(request, slug):
     cheese = Cheese.objects.get(slug=slug)
 
@@ -20,3 +31,5 @@ def cheese_detail(request, slug):
     }
 
     return render(request, 'cheese_counter/cheese_detail.html', context)
+
+

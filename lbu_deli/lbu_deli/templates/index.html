@@ -6,8 +6,15 @@
 </head>
 <body>
     <h1>Welcome</h1>
-<p>
-    Welcome to the Deli.
-</p>
+    <p>
+        Welcome to the Deli.
+    </p>
+    <p>
+        Why not check out the <a href="{% url 'cheese_counter:cheese_list' %}">Cheese Counter</a>?
+    </p>
+    <p>
+        Or perhaps you are keen to try some <a href="{% url 'cheese_counter:vegan_cheese_list' %}">vegan cheese</a>?
+    </p>
+
 </body>
 </html>
