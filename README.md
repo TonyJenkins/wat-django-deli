@@ -19,3 +19,7 @@ Add a static home page for the Deli project.
 ## Part 3
 
 Create a sample page for each cheese on the counter.
+
+## Part 4
+
+Add a listing of all cheese.
