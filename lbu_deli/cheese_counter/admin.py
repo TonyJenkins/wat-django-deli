@@ -9,6 +9,6 @@ class CheeseAdmin(admin.ModelAdmin):
     list_filter = ("milk_type", "is_vegan")
 
     prepopulated_fields = {"slug": ("name",)}
-
     search_fields = ("name", "origin")
+
     ordering = ("name",)
