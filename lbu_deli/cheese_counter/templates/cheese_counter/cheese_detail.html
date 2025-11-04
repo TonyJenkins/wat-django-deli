@@ -9,5 +9,8 @@
     <p>
         Made in {{ cheese.origin }}, this cheese is made with {{ cheese.milk_type }} milk, and is aged for {{ cheese.age_months }} months.
     </p>
+    <p>
+        <a href="{% url 'cheese_counter:cheese_list' %}">Back to the Counter</a>
+    </p>
 </body>
 </html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Cheese Counter</title>
+<body>
+    <h1>Welcome to the Cheese Counter</h1>
+    <p>
+        Here are the cheeses we currently have in stock!
+    </p>
+    <ol>
+        {% for cheese in cheeses %}
+            <li>
+                <a href="{% url 'cheese_counter:cheese_detail' cheese.slug %}">{{ cheese.name }}</a>
+            </li>
+        {% endfor %}
+    </ol>
+
+</body>
+</html>
