@@ -10,4 +10,12 @@ Add the missing _slug_ field into the Cheese model to allow for better URLs when
 
 URLs for individual cheese pages should now be:
 
-    /cheese_counter/name-of-cheese
+    /cheese-counter/name-of-cheese
+
+## Part 2
+
+Add a static home page for the Deli project.
+
+## Part 3
+
+Create a sample page for each cheese on the counter.
