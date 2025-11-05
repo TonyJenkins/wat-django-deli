@@ -23,3 +23,11 @@ Create a sample page for each cheese on the counter.
 ## Part 4
 
 Add a listing of all cheese.
+
+## Part 5
+
+Add vegan listing, and link pages.
+
+## Part 6
+
+Customise the two cheese lists.
